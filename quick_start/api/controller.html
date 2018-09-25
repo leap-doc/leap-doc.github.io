@@ -7,7 +7,7 @@
         <title>创建 Controller · Leap 框架官方开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -2386,7 +2386,7 @@
     
                                 <section class="normal markdown-section">
                                 
-<div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-controller"><b> </b>&#x521B;&#x5EFA; Controller</a></li></ul></div><a href="#&#x521B;&#x5EFA;-controller" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x521B;&#x5EFA;-controller"><a name="&#x521B;&#x5EFA;-controller" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-controller"><i class="fa fa-link" aria-hidden="true"></i></a> &#x521B;&#x5EFA; Controller</h1>
+<div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-controller"><b> </b>&#x521B;&#x5EFA; Controller</a></li></ul></div><a href="#&#x521B;&#x5EFA;-controller" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x521B;&#x5EFA;-controller"><a name="&#x521B;&#x5EFA;-controller" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-controller"><i class="fa fa-link" aria-hidden="true"></i></a> &#x521B;&#x5EFA; Controller</h1>
 <p>&#x5728; <code>src/main/java/hello/controllers</code> &#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA; <code>UserController</code> &#x7C7B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">package</span> hello<span class="token punctuation">.</span>controllers<span class="token punctuation">;</span>
 
@@ -2399,10 +2399,10 @@
 <span class="token keyword">import</span> leap<span class="token punctuation">.</span>web<span class="token punctuation">.</span>api<span class="token punctuation">.</span>mvc<span class="token punctuation">.</span>params<span class="token punctuation">.</span>QueryOptions<span class="token punctuation">;</span>
 <span class="token keyword">import</span> leap<span class="token punctuation">.</span>web<span class="token punctuation">.</span>api<span class="token punctuation">.</span>mvc<span class="token punctuation">.</span>params<span class="token punctuation">.</span>QueryOptionsBase<span class="token punctuation">;</span>
 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token keyword">extends</span> <span class="token class-name">ModelController</span><span class="token operator">&lt;</span>User<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token keyword">extends</span> <span class="token class-name">ModelController</span><span class="token generics function"><span class="token punctuation">&lt;</span>User<span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
 
     <span class="token annotation punctuation">@POST</span>
-    <span class="token keyword">public</span> ApiResponse <span class="token function">createUser</span><span class="token punctuation">(</span>Partial<span class="token operator">&lt;</span>User<span class="token operator">&gt;</span> user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> ApiResponse <span class="token function">createUser</span><span class="token punctuation">(</span>Partial<span class="token generics function"><span class="token punctuation">&lt;</span>User<span class="token punctuation">&gt;</span></span> user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token function">createAndReturn</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
@@ -2412,7 +2412,7 @@
     <span class="token punctuation">}</span>
 
     <span class="token annotation punctuation">@PATCH</span><span class="token punctuation">(</span><span class="token string">&quot;/{id}&quot;</span><span class="token punctuation">)</span>
-    <span class="token keyword">public</span> ApiResponse <span class="token function">updateUser</span><span class="token punctuation">(</span>String id<span class="token punctuation">,</span> Partial<span class="token operator">&lt;</span>User<span class="token operator">&gt;</span> user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> ApiResponse <span class="token function">updateUser</span><span class="token punctuation">(</span>String id<span class="token punctuation">,</span> Partial<span class="token generics function"><span class="token punctuation">&lt;</span>User<span class="token punctuation">&gt;</span></span> user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token function">updatePartial</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span> user<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
@@ -2471,7 +2471,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"创建 Controller","level":"2.1.2.9","depth":3,"next":{"title":"运行测试","level":"2.1.2.10","depth":3,"path":"quick_start/api/run.md","ref":"quick_start/api/run.md","articles":[]},"previous":{"title":"创建 Model","level":"2.1.2.8","depth":3,"path":"quick_start/api/model.md","ref":"quick_start/api/model.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","terminal","include-codeblock","cuav-chapters","ace","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"ace":{},"livereload":{},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"leap":{"version":"0.6.4b"}},"title":"Leap 框架官方开发文档","gitbook":"*"},"file":{"path":"quick_start/api/controller.md","mtime":"2017-08-08T07:06:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-10T08:40:39.225Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"创建 Controller","level":"2.1.2.9","depth":3,"next":{"title":"运行测试","level":"2.1.2.10","depth":3,"path":"quick_start/api/run.md","ref":"quick_start/api/run.md","articles":[]},"previous":{"title":"创建 Model","level":"2.1.2.8","depth":3,"path":"quick_start/api/model.md","ref":"quick_start/api/model.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","terminal","include-codeblock","cuav-chapters","ace","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"ace":{},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"leap":{"version":"0.6.4b"}},"title":"Leap 框架官方开发文档","gitbook":"*"},"file":{"path":"quick_start/api/controller.md","mtime":"2018-09-25T06:44:53.288Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T06:47:29.820Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2495,10 +2495,6 @@
     
         
         <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

@@ -7,7 +7,7 @@
         <title>逻辑控制 · Leap 框架官方开发文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -2386,51 +2386,51 @@
     
                                 <section class="normal markdown-section">
                                 
-<div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x903B;&#x8F91;&#x63A7;&#x5236;"><b> </b>&#x903B;&#x8F91;&#x63A7;&#x5236;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6761;&#x4EF6;&#x5224;&#x65AD;"><b>1. </b>&#x6761;&#x4EF6;&#x5224;&#x65AD;</a></li><li><span class="title-icon "></span><a href="#&#x5FAA;&#x73AF;&#x904D;&#x5386;"><b>2. </b>&#x5FAA;&#x73AF;&#x904D;&#x5386;</a></li></ul></ul></div><a href="#&#x903B;&#x8F91;&#x63A7;&#x5236;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x903B;&#x8F91;&#x63A7;&#x5236;"><a name="&#x903B;&#x8F91;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x903B;&#x8F91;&#x63A7;&#x5236;</h1>
+<div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x903B;&#x8F91;&#x63A7;&#x5236;"><b> </b>&#x903B;&#x8F91;&#x63A7;&#x5236;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6761;&#x4EF6;&#x5224;&#x65AD;"><b>1. </b>&#x6761;&#x4EF6;&#x5224;&#x65AD;</a></li><li><span class="title-icon "></span><a href="#&#x5FAA;&#x73AF;&#x904D;&#x5386;"><b>2. </b>&#x5FAA;&#x73AF;&#x904D;&#x5386;</a></li></ul></ul></div><a href="#&#x903B;&#x8F91;&#x63A7;&#x5236;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x903B;&#x8F91;&#x63A7;&#x5236;"><a name="&#x903B;&#x8F91;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x903B;&#x8F91;&#x63A7;&#x5236;</h1>
 <h2 id="&#x6761;&#x4EF6;&#x5224;&#x65AD;"><a name="&#x6761;&#x4EF6;&#x5224;&#x65AD;" class="anchor-navigation-ex-anchor" href="#&#x6761;&#x4EF6;&#x5224;&#x65AD;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6761;&#x4EF6;&#x5224;&#x65AD;</h2>
 <p>&#x9875;&#x9762;&#x6A21;&#x677F;&#x7684;&#x6E32;&#x67D3;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x60C5;&#x51B5;&#x5C31;&#x662F;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x6761;&#x4EF6;&#x9700;&#x8981;&#x6E32;&#x67D3;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
 <p>HTPL &#x4F7F;&#x7528; <code>#if</code> &#xFF0C;<code>#elseif</code> &#xFF0C;<code>#else</code> &#xFF0C;<code>#endif</code> &#x6765;&#x505A;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x7684;&#x8BED;&#x6CD5;&#x6807;&#x8BC6;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
-    <span class="token comment" spellcheck="true">&lt;!-- #set auth = false --&gt;</span>
+    <span class="token comment">&lt;!-- #set auth = false --&gt;</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-    <span class="token comment" spellcheck="true">&lt;!-- #if(auth) --&gt;</span>
+    <span class="token comment">&lt;!-- #if(auth) --&gt;</span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x6B22;&#x8FCE;&#x56DE;&#x6765;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-    <span class="token comment" spellcheck="true">&lt;!-- #else --&gt;</span>
+    <span class="token comment">&lt;!-- #else --&gt;</span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x65E0;&#x6743;&#x8BBF;&#x95EE;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-    <span class="token comment" spellcheck="true">&lt;!-- #endif --&gt;</span>
+    <span class="token comment">&lt;!-- #endif --&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre><p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684; <code>#endif</code> &#x662F;<strong>&#x5FC5;&#x987B;</strong>&#x7684;&#x95ED;&#x5408;&#x6807;&#x8BC6;&#x3002;</p>
 <h2 id="&#x5FAA;&#x73AF;&#x904D;&#x5386;"><a name="&#x5FAA;&#x73AF;&#x904D;&#x5386;" class="anchor-navigation-ex-anchor" href="#&#x5FAA;&#x73AF;&#x904D;&#x5386;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5FAA;&#x73AF;&#x904D;&#x5386;</h2>
 <p>&#x5F53;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x5217;&#x8868;&#x6570;&#x636E;&#x6E32;&#x67D3;&#x9875;&#x9762;&#x65F6;&#xFF0C;&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x6E32;&#x67D3;&#x662F;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;&#x7684;&#x3002;</p>
 <p>HTPL &#x4F7F;&#x7528; <code>#for</code>&#xFF0C;<code>#endfor</code> &#x6765;&#x505A;&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
-<pre class="language-"><code><span class="token comment" spellcheck="true">&lt;!-- #for(user : users) --&gt;</span>
+<pre class="language-"><code><span class="token comment">&lt;!-- #for(user : users) --&gt;</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span> username : ${user.name}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span> nickname : ${user.nickname}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token comment" spellcheck="true">&lt;!-- #endfor --&gt;</span>
+<span class="token comment">&lt;!-- #endfor --&gt;</span>
 </code></pre><p>&#x5F53;&#x904D;&#x5386;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57; n &#x65F6;&#xFF0C;&#x8868;&#x793A;&#x5FAA;&#x73AF; n &#x6B21;:</p>
-<pre class="language-"><code><span class="token comment" spellcheck="true">&lt;!-- #for(i: 2) --&gt;</span>
+<pre class="language-"><code><span class="token comment">&lt;!-- #for(i: 2) --&gt;</span>
 ${i}
-<span class="token comment" spellcheck="true">&lt;!-- #endfor --&gt;</span>
+<span class="token comment">&lt;!-- #endfor --&gt;</span>
 </code></pre><p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x5C06;&#x8F93;&#x51FA;&#xFF1A;<code>12</code>&#x3002;</p>
 <p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>#break</code> &#x63D0;&#x524D;&#x8DF3;&#x51FA;&#x5FAA;&#x73AF;&#xFF0C;&#x4F8B;&#x5982;:</p>
-<pre class="language-"><code><span class="token comment" spellcheck="true">&lt;!-- #for(i: 100) --&gt;</span>
+<pre class="language-"><code><span class="token comment">&lt;!-- #for(i: 100) --&gt;</span>
     ${i}
-    <span class="token comment" spellcheck="true">&lt;!-- #break i &gt; 50 --&gt;</span>
-<span class="token comment" spellcheck="true">&lt;!-- #endfor --&gt;</span>
+    <span class="token comment">&lt;!-- #break i &gt; 50 --&gt;</span>
+<span class="token comment">&lt;!-- #endfor --&gt;</span>
 </code></pre><p><code>#for</code> &#x5185;&#x90E8;&#x5B9A;&#x4E49;&#x4E86; loop &#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BE5;&#x5BF9;&#x8C61;&#x8BBF;&#x95EE;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;:</p>
-<pre class="language-"><code><span class="token comment" spellcheck="true">&lt;!-- #for(user : users) --&gt;</span>
+<pre class="language-"><code><span class="token comment">&lt;!-- #for(user : users) --&gt;</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span> index : ${loop.index}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span> username : ${user.name}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token comment" spellcheck="true">&lt;!-- #endfor --&gt;</span>
+<span class="token comment">&lt;!-- #endfor --&gt;</span>
 </code></pre><p>&#x6CE8;&#x610F;: ${loop.index} &#x4ECE; 1 &#x5F00;&#x59CB;&#x3002;</p>
 <p><code>#empty</code> &#x7528;&#x4E8E;&#x5728;&#x5FAA;&#x73AF;&#x7684;&#x5BF9;&#x8C61;&#x4E3A;&#x7A7A;&#x65F6;&#x663E;&#x793A;&#x5185;&#x5BB9;:</p>
-<pre class="language-"><code><span class="token comment" spellcheck="true">&lt;!-- #for (user: users) --&gt;</span>
+<pre class="language-"><code><span class="token comment">&lt;!-- #for (user: users) --&gt;</span>
     ${user.name}
-<span class="token comment" spellcheck="true">&lt;!-- #empty --&gt;</span>
+<span class="token comment">&lt;!-- #empty --&gt;</span>
     No users.
-<span class="token comment" spellcheck="true">&lt;!-- #endfor --&gt;</span>
+<span class="token comment">&lt;!-- #endfor --&gt;</span>
 </code></pre><p>&#x5047;&#x8BBE; users &#x672A;&#x5B9A;&#x4E49;&#xFF0C;&#x5219;&#x4E0A;&#x9762;&#x5C06;&#x8F93;&#x51FA;&#x4E3A; No users&#x3002;</p>
 
 <div class="ex-page-foot">
@@ -2474,7 +2474,7 @@ ${i}
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"逻辑控制","level":"8.1.2.3","depth":3,"next":{"title":"模板引用","level":"8.1.2.4","depth":3,"path":"htpl/syntax/ref.md","ref":"htpl/syntax/ref.md","articles":[]},"previous":{"title":"设置变量","level":"8.1.2.2","depth":3,"path":"htpl/syntax/set.md","ref":"htpl/syntax/set.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","terminal","include-codeblock","cuav-chapters","ace","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"ace":{},"livereload":{},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"leap":{"version":"0.6.4b"}},"title":"Leap 框架官方开发文档","gitbook":"*"},"file":{"path":"htpl/syntax/logic.md","mtime":"2017-07-21T06:53:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-10T08:40:39.225Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"逻辑控制","level":"8.1.2.3","depth":3,"next":{"title":"模板引用","level":"8.1.2.4","depth":3,"path":"htpl/syntax/ref.md","ref":"htpl/syntax/ref.md","articles":[]},"previous":{"title":"设置变量","level":"8.1.2.2","depth":3,"path":"htpl/syntax/set.md","ref":"htpl/syntax/set.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-highlight","prism","terminal","include-codeblock","cuav-chapters","ace","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{},"ace":{},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"terminal":{"copyButtons":false,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"leap":{"version":"0.6.4b"}},"title":"Leap 框架官方开发文档","gitbook":"*"},"file":{"path":"htpl/syntax/logic.md","mtime":"2018-09-25T06:44:53.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T06:47:29.820Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2498,10 +2498,6 @@ ${i}
     
         
         <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
